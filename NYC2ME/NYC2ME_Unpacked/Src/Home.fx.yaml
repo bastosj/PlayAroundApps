@@ -1,0 +1,130 @@
+Home As screen:
+    Fill: =Transparent
+
+    Image1 As image:
+        Height: =640
+        Image: =nycWallpaper
+        ImagePosition: =ImagePosition.Fill
+        Transparency: =30%
+        Width: =1136
+        ZIndex: =1
+
+    "ViewShapeInMR1 As 'View shape in MR (preview)'":
+        BorderFillColor: =Purple
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledContentColor: =RGBA(166, 166, 166, 1)
+        DisabledFillColor: =RGBA(244, 244, 244, 1)
+        DisplayMode: =DisplayMode.Edit
+        DisplayType: ='''Microsoft.ViewShapeInMR.DisplayType'''.SHP_IconText
+        FillColor: =Gray
+        Font: =Font.'Segoe UI'
+        Height: =70
+        HoverBorderColor: =Yellow
+        HoverContentColor: =RGBA(255, 255, 255, 1)
+        HoverFillColor: =ColorFade(Gray, 40%)
+        PressedBorderColor: =ColorFade(Purple, 60%)
+        PressedContentColor: =White
+        PressedFillColor: =ColorFade(Gray, 60%)
+        TextColor: =RGBA(255, 255, 255, 1)
+        Width: =280
+        X: =835
+        Y: =544
+        ZIndex: =2
+
+    "MeasureInMR2 As 'Measure in MR (preview)'.pcfdataset":
+        BorderFillColor: =Purple
+        BoxDraw: =false
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledContentColor: =RGBA(166, 166, 166, 1)
+        DisabledFillColor: =RGBA(244, 244, 244, 1)
+        DisplayMode: =DisplayMode.Edit
+        FillColor: =Gray
+        Font: =Font.'Segoe UI'
+        Height: =70
+        HoverBorderColor: =Yellow
+        HoverContentColor: =RGBA(255, 255, 255, 1)
+        HoverFillColor: =ColorFade(Gray, 20%)
+        PressedBorderColor: =ColorFade(Purple, 40%)
+        PressedContentColor: =White
+        PressedFillColor: =ColorFade(Gray, 60%)
+        TextColor: =RGBA(255, 255, 255, 1)
+        Width: =280
+        X: =430
+        Y: =544
+        ZIndex: =3
+
+    "ViewInMR1 As 'View in MR (preview)'":
+        BorderFillColor: =Purple
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledContentColor: =RGBA(166, 166, 166, 1)
+        DisabledFillColor: =RGBA(244, 244, 244, 1)
+        DisplayMode: =DisplayMode.Edit
+        FillColor: =Gray
+        Font: =Font.'Segoe UI'
+        Height: =70
+        HoverBorderColor: =Yellow
+        HoverContentColor: =RGBA(255, 255, 255, 1)
+        HoverFillColor: =ColorFade(Gray, 20%)
+        PressedBorderColor: =ColorFade(Purple, 40%)
+        PressedContentColor: =White
+        PressedFillColor: =ColorFade(Gray, 60%)
+        Source: =varGithub & Gallery4.Selected.Model
+        TextColor: =RGBA(255, 255, 255, 1)
+        Width: =280
+        X: =25
+        Y: =544
+        ZIndex: =4
+
+    Gallery4 As gallery.galleryHorizontal:
+        BorderStyle: =None
+        Height: =153
+        Items: =ModelData
+        ShowNavigation: =true
+        ShowScrollbar: =false
+        TemplateSize: =166
+        Width: =1090
+        X: =25
+        Y: =180
+        ZIndex: =5
+
+        Image5 As image:
+            BorderColor: =If(ThisItem.IsSelected, Yellow, Transparent)
+            BorderThickness: =3
+            Fill: =RGBA(153, 153, 153, 1)
+            Height: =136
+            HoverBorderColor: =If(ThisItem.IsSelected, Yellow, Purple)
+            Image: =varGithub & ThisItem.Image
+            OnSelect: =Select(Parent)
+            PressedBorderColor: =Purple
+            RadiusBottomLeft: =200
+            RadiusBottomRight: =200
+            RadiusTopLeft: =200
+            RadiusTopRight: =200
+            Width: =136
+            ZIndex: =1
+
+    Label1 As label:
+        Align: =Align.Center
+        Color: =Purple
+        Font: =Font.'Segoe UI'
+        Height: =70
+        Size: =21
+        Text: |-
+            ="Artist: " & Gallery4.Selected.Source
+        Width: =1136
+        Y: =391
+        ZIndex: =6
+
+    Label2 As label:
+        Align: =Align.Center
+        Color: =Purple
+        Font: =Font.'Segoe UI'
+        FontWeight: =FontWeight.Semibold
+        Height: =70
+        Size: =39
+        Text: ="NYC 2 me"
+        Width: =560
+        X: =260
+        Y: =10
+        ZIndex: =7
+
