@@ -1,0 +1,20 @@
+// This script uploads solution content to DevOps Repo
+
+echo commit all changes
+git config --global user.email "joao.bastos@igh.com"
+git config --global user.name "JoaoBastos"
+git checkout main
+git add --all
+git commit -m "solution init"
+
+echo push code to new repo
+git -c http.extraheader="AUTHORIZATION: bearer $(System.AccessToken)" push origin main
+
+
+
+// Artifacts Folder
+$(Build.ArtifactStagingDirectory)\$(SolutionName).zip
+
+
+// Target Sources folder for unpacked solution
+$(Build.SourcesDirectory)\$(SolutionName)
