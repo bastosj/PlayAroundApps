@@ -24,3 +24,15 @@ Screen1 As screen:
         Y: =100
         ZIndex: =4
 
+    Label1 As label:
+        Text: ="Text"
+        X: =120
+        Y: =120
+        ZIndex: =5
+
+    Label2 As label:
+        Text: ="Text"
+        X: =140
+        Y: =140
+        ZIndex: =6
+
