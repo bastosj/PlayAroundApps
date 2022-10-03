@@ -1,7 +1,7 @@
 # Senseless Apps: proof of concept and capability demonstration
 
 ## Know Your Beer
-This App takes photos and identifies beer brands based on a machine learening model, trained using AI Builder capabilities.
+This App takes photos and identifies beer brands, based on a machine learning model trained using AI Builder capabilities. It's a one page App, simple UI to count beers and their brands.
 
 
 ## NYC 2 ME
