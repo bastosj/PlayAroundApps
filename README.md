@@ -1,4 +1,5 @@
-# Senseless Apps: my idea with this is to store (and publicly share in case you're as insane as I am to use these) random, useless apps with the sole purpose of demonstrating different capability from Microsoft cloud technologies.
+# Senseless Apps: 
+My idea with this is to store (and publicly share in case you're as insane as I am to use these) random, useless apps with the sole purpose of demonstrating different capability from Microsoft cloud technologies.
 
 ## Know Your Beer
 This App takes photos and identifies beer brands, based on a machine learning model trained using AI Builder capabilities. It's a one page App, simple UI to count beers and their brands.
