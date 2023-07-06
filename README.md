@@ -20,4 +20,4 @@ A very simple app connection to a public connector (MSN weather), and displaying
 
 ## CatGPT
 App built with Azure OpenAI service. This App sometimes responds as ChatGPT normally would and other times..... just meoows randomly back at you.
-https://github.com/bastosj/SenselessApps/blob/main/CatGPT/CatGPT.gif
+![](https://github.com/bastosj/SenselessApps/blob/main/CatGPT/CatGPT.gif)
